@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+nav {
+  width: 250px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+}
+
+nav li {
+  color: var(--color1);
+  font-size: 1.5rem;
+}
+
+.nav-active {
+  text-decoration: underline var(--color1);
+}
