@@ -1,12 +1,12 @@
+import { Link } from "react-router-dom";
 import CardCSS from "../style/Card.module.css";
 
-
-const Card = ({logement}) => {
+const Card = ({ logement }) => {
   return (
-    <li className={CardCSS.card}>
+    <Link to={`/logement/${logement.id}`} className={CardCSS.card}>
       <img src={logement.cover} alt={logement.title} />
       <h3>{logement.title}</h3>
-    </li>
+    </Link>
   );
 };
 
