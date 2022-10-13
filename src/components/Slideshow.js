@@ -35,7 +35,7 @@ const Slideshow = ({ thisLogement }) => {
         />
       ) : null}
 
-        <p>{`${current + 1}/${length}`}</p>
+      <p>{`${current + 1}/${length}`}</p>
 
       {thisLogement.pictures.map((slide, index) => {
         return (
