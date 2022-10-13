@@ -1,25 +1,31 @@
-.titleLocationHost {
+.infos {
   margin: 0 auto;
   width: 90%;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
   color: var(--color1);
-}
-
-.titleLocationHost p {
-  font-size: 1.125rem;
-  width: 30%;
 }
 
 .titleLocation h1 {
   font-size: 2.25rem;
+  margin: 0;
+}
+.location {
+  font-size: 1.125rem;
 }
 
+.hostRatings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .host {
   display: flex;
   justify-content: space-between;
-  max-width: 160px;
+  width: 190px;
+}
+.host p {
+  font-size: 1.125rem;
 }
 
 .host img {
@@ -38,7 +44,6 @@
 .tags {
   display: flex;
   justify-content: flex-start;
-  width: 23%;
   font-size: 0.875rem;
   color: white;
 }
@@ -47,7 +52,7 @@
   background: var(--color1);
   border-radius: 10px;
   padding: 5px 10px;
-  margin-right: 10px;
+  margin: 0 10px 0 0;
 }
 
 .collapses {
@@ -55,4 +60,53 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 533px) {
+  .infos {
+    display: block;
+  }
+  .titleLocation h1 {
+    font-size: 18px;
+  }
+  .location {
+    font-size: 14px;
+  }
+  .tags p {
+    font-size: 10px;
+  }
+  .hostRatings {
+    flex-direction: row-reverse;
+    margin-top: 10px;
+  }
+  .host {
+    width: 120px;
+  }
+  .host p {
+    font-size: 12px;
+  }
+  .host img {
+    width: 32px;
+    height: 32px;
+  }
+  .rating {
+    width: 105px;
+  }
+  .rating img {
+    width: 15px;
+  }
+
+  .collapses {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
 }

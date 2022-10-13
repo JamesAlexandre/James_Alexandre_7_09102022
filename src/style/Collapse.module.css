@@ -16,6 +16,17 @@
   height: fit-content;
   cursor: pointer;
 }
+.titleLogement {
+  background: var(--color1);
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  height: fit-content;
+  cursor: pointer;
+}
+
 .title h2 {
   margin: 5px;
 }
@@ -41,4 +52,28 @@
 
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 533px) {
+  .accordionLogement {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .accordionAbout {
+    width: 90%;
+  }
+  .titleLogement {
+    padding: 0 20px;
+  }
+  .title h2 {
+    font-size: 13px;
+  }
+  .titleText {
+    margin: 5px;
+    font-size: 13px;
+  }
+  .contentLogement,
+  .content p {
+    font-size: 12px;
+  }
 }

@@ -20,7 +20,7 @@ const Collapse = ({ title, content, i }) => {
         logementId ? CollapseCSS.accordionLogement : CollapseCSS.accordionAbout
       }
     >
-      <div className={CollapseCSS.title} onClick={() => toggle(i)}>
+      <div className={logementId ? CollapseCSS.titleLogement : CollapseCSS.title} onClick={() => toggle(i)}>
         <h2 className={logementId ? CollapseCSS.titleText : null}>{title}</h2>
         <img src={selected === i ? Up : Down} alt="flèche" />
       </div>

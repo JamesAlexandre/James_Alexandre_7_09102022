@@ -1,8 +1,5 @@
 .carrousel {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 40px auto;
   width: 90%;
 }
@@ -52,4 +49,15 @@
   opacity: 1;
   transition-duration: 0.5s;
   width: 100%;
+}
+
+@media screen and (max-width: 425px) {
+  .left, .right {
+    width: 12px;
+  }
+  .image {
+    height: fit-content;
+    border-radius: 10px;
+    height: 255px;
+  }
 }

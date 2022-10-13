@@ -49,5 +49,11 @@ nav li {
   nav {
     width: 137px;
   }
-
+  nav ul {
+    justify-content: space-around;
+    width: 137px;
+  }
+  nav li {
+    font-size: 12px;
+  }
 }

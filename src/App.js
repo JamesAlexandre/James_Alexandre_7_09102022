@@ -6,7 +6,6 @@ import About from "./pages/About";
 import Error from "./pages/Error";
 
 const App = () => {
-  const { logementId } = useParams();
   
   return (
     <BrowserRouter>
