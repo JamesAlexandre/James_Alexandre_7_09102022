@@ -1,4 +1,6 @@
 .titleLocationHost {
+  margin: 0 auto;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -27,6 +29,8 @@
 }
 
 .tagsRating {
+  margin: 0 auto;
+  width: 90%;
   display: flex;
   justify-content: space-between;
 }
@@ -47,6 +51,8 @@
 }
 
 .collapses {
+  margin: 40px auto;
+  width: 90%;
   display: flex;
   justify-content: space-between;
 }

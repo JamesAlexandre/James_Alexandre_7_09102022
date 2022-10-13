@@ -1,11 +1,13 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 import Home from "./pages/Home";
 import Logement from "./pages/Logement";
 import About from "./pages/About";
 import Error from "./pages/Error";
 
 const App = () => {
+  const { logementId } = useParams();
+  
   return (
     <BrowserRouter>
       <Routes>
@@ -13,6 +15,7 @@ const App = () => {
         <Route exact path="/about" element={<About />} />
         <Route exact path="/logement/:logementId" element={<Logement />} />
 
+        <Route path="/error" element={<Error />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>

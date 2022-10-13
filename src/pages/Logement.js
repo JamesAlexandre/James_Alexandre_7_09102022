@@ -11,6 +11,7 @@ import Collapse from "../components/Collapse";
 const Logement = () => {
   const { logementId } = useParams();
   const thisLogement = Data.find((logement) => logement.id === logementId);
+  
 
   return (
     <div>
@@ -37,10 +38,10 @@ const Logement = () => {
           </div>
           <div className="rating">
             {[...Array(parseInt(thisLogement.rating))].map((e, i) => (
-              <img src={Star} alt="" />
+              <img src={Star} alt="étoiles rouges" key={i} />
             ))}
             {[...Array(5 - parseInt(thisLogement.rating))].map((e, i) => (
-              <img src={StarGrey} alt="" />
+              <img src={StarGrey} alt="étoiles grises" key={i} />
             ))}
           </div>
         </div>

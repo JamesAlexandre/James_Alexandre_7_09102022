@@ -41,3 +41,33 @@
   margin-left: 10px;
   width: 35%;
 }
+
+@media screen and (max-width: 1398px) {
+  .card {
+    width: auto;
+  }
+}
+@media screen and (max-width: 1072px) {
+  .card {
+    width: 37%;
+  }
+}
+@media screen and (max-width: 964px) {
+  .card {
+    min-width: 335px;
+  }
+}
+@media screen and (max-width: 672px) {
+  .card {
+    height: 225px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    margin: 10px 0;
+    width: 100%;
+    min-width: 0;
+  }
+}

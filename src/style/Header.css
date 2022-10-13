@@ -2,6 +2,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin: 40px auto;
+  width: 90%;
+}
+
+header img {
+  width: 30%;
+  max-width: 210px;
 }
 nav {
   width: 250px;
@@ -20,4 +27,27 @@ nav li {
 
 .nav-active {
   text-decoration: underline var(--color1);
+}
+
+@media screen and (max-width: 678px) {
+  header {
+    align-items: center;
+    margin: 20px;
+  }
+  header img {
+    width: 50%;
+  }
+  nav {
+    width: 150px;
+  }
+  nav li {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  nav {
+    width: 137px;
+  }
+
 }

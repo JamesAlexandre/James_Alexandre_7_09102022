@@ -3,7 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  margin: 40px auto;
+  width: 90%;
 }
 
 .carrousel p {
@@ -19,7 +20,7 @@
   width: inherit;
   height: 415px;
   border-radius: 25px;
-  object-fit:cover ;
+  object-fit: cover;
 }
 
 .right {
