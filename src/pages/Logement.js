@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Slideshow from "../components/Slideshow";
@@ -7,19 +7,13 @@ import LogementCSS from "../style/Logement.module.css";
 import Star from "../assets/star.svg";
 import StarGrey from "../assets/star_grey.svg";
 import Collapse from "../components/Collapse";
-import { useEffect } from "react";
 
 const Logement = () => {
   const { logementId } = useParams();
   const thisLogement = Data.find((logement) => logement.id === logementId);
-  const navigate = useNavigate();
-
-  // const navigateToError = () => {
-  //   navigate("/error", { replace: true });
-  // };
 
   if (!thisLogement) {
-    window.location.replace("/error");
+    return <Navigate to="*" />;
   } else
     return (
       <div>
